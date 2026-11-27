@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consulta de OS</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Assistência Técnica</h1>
+    <p>Acompanhe o conserto do seu equipamento</p>
+  </header>
+
+  <main>
+    <p id="aviso-demo" class="aviso" hidden>
+      Modo demonstração: a API não respondeu, então estou usando dados de exemplo.
+      Teste com a OS <strong>2</strong> e final do telefone <strong>2231</strong>.
+    </p>
+
+    <form id="form-consulta" class="cartao">
+      <label for="numero">Número da OS</label>
+      <input id="numero" type="number" min="1" required placeholder="Ex.: 2">
+
+      <label for="telefone">4 últimos dígitos do telefone</label>
+      <input id="telefone" type="text" inputmode="numeric" maxlength="4" pattern="\d{4}" required placeholder="Ex.: 2231">
+
+      <button type="submit">Consultar</button>
+    </form>
+
+    <p id="erro" class="erro" hidden></p>
+
+    <section id="resultado" class="cartao" hidden>
+      <div class="titulo-os">
+        <h2>OS <span id="os-numero"></span></h2>
+        <span id="os-status" class="selo"></span>
+      </div>
+      <p id="os-equipamento" class="equipamento"></p>
+
+      <ol id="linha-do-tempo" class="linha-do-tempo"></ol>
+
+      <dl class="detalhes">
+        <dt>Aberta em</dt>      <dd id="os-aberta"></dd>
+        <dt>Previsão</dt>       <dd id="os-previsao"></dd>
+        <dt>Diagnóstico</dt>    <dd id="os-diagnostico"></dd>
+        <dt>Valor</dt>          <dd id="os-valor"></dd>
+      </dl>
+    </section>
+  </main>
+
+  <footer>Dúvidas? Ligue (18) 3600-0000</footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/dados-demo.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
