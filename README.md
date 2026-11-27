@@ -23,7 +23,7 @@
 </p>
 
 <p align="center">
-  <img src="docs/consulta-web.png" alt="Página de consulta da OS" width="760">
+  <img src="docs/consulta-os.png" alt="Página de consulta da OS" width="760">
 </p>
 
 ## Sobre
