@@ -1,0 +1,7 @@
+; Copie para a pasta do executável com o nome config.ini
+[Banco]
+Host=localhost
+Porta=1521
+Servico=FREEPDB1
+Usuario=os
+Senha=os
