@@ -86,8 +86,9 @@ form button:disabled {
 }
 
 .aviso {
-  background: #fff7d6;
-  border: 1px solid #f0d878;
+  background: #e8f1f5;
+  border: 1px solid #c3dbe5;
+  color: var(--cor-principal);
   padding: 10px 12px;
   border-radius: 6px;
   font-size: 0.9rem;
