@@ -1,0 +1,4 @@
+*.pas  text eol=crlf
+*.dpr  text eol=crlf
+*.dfm  text eol=crlf
+*.sql  text eol=lf

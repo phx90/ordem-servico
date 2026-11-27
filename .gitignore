@@ -1,0 +1,16 @@
+# Delphi
+__history/
+__recovery/
+Win32/
+Win64/
+*.dcu
+*.exe
+*.res
+*.identcache
+*.local
+*.dsk
+*.stat
+*.~*
+
+# config com senha fica fora do repositório
+desktop/config.ini
